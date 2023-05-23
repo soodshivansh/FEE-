@@ -1,0 +1,517 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+.banner .nav{
+    display: flex;
+    width: 100%;
+    padding: 3%;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+    position: fixed;
+    background: grey; 
+    z-index: 999;
+
+}
+
+.banner .nav .nav1 {
+    display: flex;
+    /* flex-direction:row; */
+    left:10px;
+    justify-content: space-between;
+    position: absolute;
+    left: 47%;
+    top: 30%;
+    
+    /* position: relative;
+    margin-left: 5%; */
+    /* float: right; */
+}
+
+ 
+.banner .nav .nav1 ul{
+    flex: 1;
+    display: block;
+    justify-content: space-between;
+}
+.banner .nav .nav1 ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position:flex; 
+    left:18px;
+    
+    font-family: 'Comfortaa', cursive;
+    font-size: x-large;
+    font-weight: 500;
+    cursor: pointer;
+    justify-content: space-between;
+
+}
+.banner .nav .nav1 ul li a{
+color: black;
+text-decoration: none;
+font-size: 17px;
+cursor: pointer;
+font-size: x-large;
+
+}
+.banner .nav .nav1 ul li::after{
+    content:"";
+    width: 0%;
+    height: 2px;
+    background:rgb(96, 31, 31);
+    display: block;
+    margin: auto;
+    transition: 0.8s;
+    cursor: pointer;
+    background: grey;
+
+}
+.banner .nav .nav1 ul li:hover::after{
+    width:100%;
+    cursor: pointer;
+    background: grey;
+
+}
+.banner .nav .cname p{
+    width: 150px;
+    font-size:xx-large;
+    font-weight: 1000;
+    font-family: 'Comfortaa', cursive;
+    cursor: pointer;
+    position: absolute;
+    left: 5%;
+    top: 30%;
+
+}
+/* .banner .fpara{
+    position: absolute;
+    left: 10%;
+    top: 20%;
+} */
+.banner .fpara h1{
+    position: absolute;
+    left: 10%;
+    top: 20%;
+    font-size: 350% ;
+    font-family: 'Comfortaa', cursive;
+    cursor: pointer;
+}
+
+.banner .fpara h2{
+    position: absolute;
+    left: 10%;
+    top: 48%;
+    font-size: 150% ;
+    font-family: 'Comfortaa', cursive;
+    cursor: pointer;
+
+}
+.banner .button1{
+    display: inline-block;
+    padding: 12px 30px;
+    text-align: center;
+    font-size: 30px;
+    text-transform: capitalize;
+    letter-spacing: 0.7px;
+    font-weight: 500;
+    font-family: 'Comfortaa', cursive;
+    border: 0;
+    border-radius: 35px;
+    background: grey;
+    transition: 0.5s;
+    cursor: pointer;
+    color: black;
+    position: relative;
+    margin-top: 25px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(218,225,232,0.85);
+    position: absolute;
+    left: 18%;
+    top: 70%;
+    cursor: pointer;
+}
+/* .banner .b1{
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: black;
+    outline: 2px solid black;
+    padding: 30px 60px;
+    position: absolute;
+    overflow: hidden;
+    transition: color 1s;
+    top: 74%;
+    left: 15%;
+    border-radius: 35px;
+    background-color: grey;
+
+} */
+/* .b1:hover{
+    color: grey;
+}
+.banner .b1::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -50px;
+    width: 0;
+    height: 100%;
+    background-color: black;
+    transform: skewX(35deg);
+    z-index: -1;
+    transition: width 1s;
+}
+.banner .b1:hover::before{
+    width: 150%;
+} */
+.banner .button2{
+    display: inline-block;
+    padding: 12px 30px;
+    text-align: center;
+    font-size: 30px;
+    text-transform: capitalize;
+    letter-spacing: 0.7px;
+    font-weight: 500;
+    font-family: 'Comfortaa', cursive;
+    border: 0;
+    border-radius: 35px;
+    background: grey;
+    transition: 0.5s;
+    cursor: pointer;
+    color: black;
+    position: relative;
+    margin-top: 25px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(218,225,232,0.85);
+    position: absolute;
+    left: 38%;
+    top: 70%;
+    cursor: pointer;
+}
+
+.banner{
+    background-color: grey ;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    position: relative;
+
+}
+.banner .waves{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+}
+.banner .img{
+    position: absolute;
+    top: 15%;
+    left: 55%;
+    width: 40%;
+    cursor: pointer;
+
+}
+.features{
+    height: 100%;
+    width: 50%;
+}
+ .features .item1{
+    text-align: center;
+    position: absolute;
+    left: 12%;
+    margin-top: 5%;
+    cursor: pointer;
+
+}
+ .features .item2{
+    text-align: center;
+    position: absolute;
+    left: 42%;
+    margin-top: 5%;
+    cursor: pointer;
+
+}
+ .features .item3{
+    text-align: center;
+    position: absolute;
+    left: 68%;
+    margin-top: 5%;
+    cursor: pointer;
+
+}
+.features .p{
+    font-size: x-large;
+    cursor: pointer;
+
+}
+.features{
+    height: 45vh;
+}
+.about{
+    background-color: rgb(165, 164, 164);
+    height: 80vh;
+}
+.about .heading{
+    position: relative;
+    margin-left: 50%;
+    top: 21%;
+    cursor: pointer;
+
+}
+.about .aboutimg{
+    position: relative;
+    margin-top: -18%;
+    margin-left: 15%;
+    cursor: pointer;
+
+}
+.about .heading h4{
+    font-family: 'Rubik', sans-serif;
+    color: white;
+    font-size: medium;
+    cursor: pointer;
+
+
+}
+.about .heading h1{
+    font-family: 'Rubik', sans-serif;
+    font-size: 3em;
+    cursor: pointer;
+    
+}
+.about .heading p{
+    font-size: x-large;
+    cursor: pointer;
+
+}
+.quality{
+    height: 90vh;
+    margin-top: 3%;
+}
+.quality h2{
+    font-size: xxx-large;
+    position: absolute;
+    left: 40%;
+    cursor: pointer;
+
+}
+@keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+.fa-spin {
+    animation: spin 2s linear infinite;
+  }
+.quality .left{
+    line-height: 1.5;
+    position: absolute;
+    text-align: right;
+    left: 10%;
+    top: 248%;
+    font-family: 'Comfortaa', cursive;
+}  
+.quality .left p{
+    color: grey;
+    cursor: pointer;
+
+}  
+.quality .right{
+    line-height: 1.5;
+    position: absolute;
+    text-align: left;
+    left: 67%;
+    top: 248%;
+    font-family: 'Comfortaa', cursive;
+}  
+.quality .right p{
+    color: grey;
+    cursor: pointer;
+}  
+
+.reviews{
+    height: 75vh;
+    background: rgb(228, 227, 227);
+}
+.reviews .review1{
+    background-color: #ffffff;
+    width: 500px;
+    padding: 50px;
+    margin: 20px;
+    position: relative;
+    top: 20%;
+    left: 12%;
+    overflow: hidden;
+    box-shadow: 0px 3px 20px 40px rgba(128, 128, 129, 0.1);
+    border-radius: 7px; 
+    cursor: pointer;
+    text-align: center;
+}
+.reviews .review2{
+    background-color: #ffffff;
+    width: 500px;
+    padding: 50px;
+    margin: 20px;
+    position: relative;
+    top: -47.5%;
+    left: 57%;
+    overflow: hidden;
+    box-shadow: 0px 3px 20px 40px rgba(128, 128, 129, 0.1);
+    border-radius: 7px; 
+    text-align: center;
+    cursor: pointer;
+
+}
+.checked {
+    color: orange;
+}
+.price{
+    height: 70vh;
+    background: white;
+}
+
+.price .p1{
+    width: 530px;
+    padding: 20px;
+    margin: 5px;
+    box-shadow: 0px 3px 20px 40px rgba(128, 128, 129, 0.1);
+    border-radius: 7px; 
+    position: relative;
+    top: 13.5%;
+    left: 10%;
+
+}
+.price .p2{
+    width: 530px;
+    padding: 20px;
+    margin: 20px;
+    box-shadow: 0px 3px 20px 40px rgba(128, 128, 129, 0.1);
+    border-radius: 7px; 
+    position: relative;
+    margin-top: -17vh;
+    left: 55%;
+
+}
+.price .p3{
+    width: 530px;
+    padding: 20px;
+    margin: 20px;
+    box-shadow: 0px 3px 20px 40px rgba(128, 128, 129, 0.1);
+    border-radius: 7px; 
+    position: relative;
+    top: 13.5%;
+    left: 9%;
+
+}
+.price .p4{
+    width: 530px;
+    padding: 20px;
+    margin: 20px;
+    box-shadow: 0px 3px 20px 40px rgba(128, 128, 129, 0.1);
+    border-radius: 7px; 
+    position: relative;
+    top: -19vh;
+    left: 55%;
+}
+.price .p1 .p1a{
+    position: absolute;
+    left: 35%;
+    top: 10%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.price .p2 .p1a{
+    position: absolute;
+    left: 35%;
+    top: 10%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.price .p3 .p1a{
+    position: absolute;
+    left: 35%;
+    top: 10%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.price .p4 .p1a{
+    position: absolute;
+    left: 35%;
+    top: 10%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.price .p1 .cart{
+    width: 300px;
+    padding: 5px;
+    background:red;
+    border-radius: 20px;
+    text-align: center;
+    position: absolute;
+    left: 35%;
+    top: 70%;
+    cursor: pointer;
+}
+.price .p2 .cart{
+    width: 300px;
+    padding: 5px;
+    background:red;
+    border-radius: 20px;
+    text-align: center;
+    position: absolute;
+    left: 35%;
+    top: 70%;
+    cursor: pointer;
+}
+.price .p3 .cart{
+    width: 300px;
+    padding: 5px;
+    background:red;
+    border-radius: 20px;
+    text-align: center;
+    position: absolute;
+    left: 35%;
+    top: 70%;
+    cursor: pointer;
+}
+.price .p4 .cart{
+    width: 300px;
+    padding: 5px;
+    background:red;
+    border-radius: 20px;
+    text-align: center;
+    position: absolute;
+    left: 35%;
+    top: 70%;
+    cursor: pointer;
+}
+.footer{
+    height: 45vh;
+    background: darkgrey;
+    position: relative;
+    top: -4px;
+}
+.footer .f1 .icon{
+    padding: 20px;
+}
+.footer .nav{
+    font-family: 'Comfortaa', cursive;
+    font-size: x-large;
+    font-weight: 300;
+    position: absolute;
+    top: 18%;
+    left: 40%;
+}
+.footer .contact{
+    font-family: 'Comfortaa', cursive;
+    font-size: x-large;
+    position: absolute;
+    top: 18%;
+    left: 70%;
+}
